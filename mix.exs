@@ -9,7 +9,7 @@ defmodule Dlocal.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: description(),
-      package: package(),
+      package: package()
     ]
   end
 
@@ -25,7 +25,10 @@ defmodule Dlocal.MixProject do
     [
       {:ex_doc, "~> 0.23.0"},
       {:jason, "~> 1.2"},
-      {:httpoison, "~> 1.7"}
+      {:httpoison, "~> 1.7"},
+
+      # various analyses tools
+      {:credo, "~> 1.5", only: [:dev, :test], runtime: false}
     ]
   end
 
@@ -44,5 +47,4 @@ defmodule Dlocal.MixProject do
       }
     ]
   end
-
 end
