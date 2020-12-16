@@ -23,7 +23,9 @@ defmodule Dlocal.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_doc, "~> 0.23.0"}
+      {:ex_doc, "~> 0.23.0"},
+      {:jason, "~> 1.2"},
+      {:httpoison, "~> 1.7"}
     ]
   end
 
