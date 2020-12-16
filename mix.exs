@@ -8,6 +8,8 @@ defmodule Dlocal.MixProject do
       elixir: "~> 1.11-rc",
       start_permanent: Mix.env() == :prod,
       deps: deps()
+      description: description(),
+      package: package(),
     ]
   end
 
@@ -25,4 +27,21 @@ defmodule Dlocal.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
   end
+
+  defp description do
+    """
+    Dlocal API library for Elixir
+    """
+  end
+
+  defp package do
+    [
+      maintainers: ["Nicolas Mena"],
+      licenses: ["MIT"],
+      links: %{
+        "Github" => "https://github.com/nmenag/dlocal"
+      }
+    ]
+  end
+
 end
