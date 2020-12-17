@@ -4,7 +4,7 @@ defmodule Dlocal.Util do
   @doc false
   @spec get_url() :: String.t()
   def get_url() do
-    if Application.get_env(:dlocal, :sandbox) == false, do: live_url, else: sandbox_url
+    if Application.get_env(:dlocal, :sandbox) == false, do: live_url(), else: sandbox_url()
   end
 
   defp live_url do
@@ -15,7 +15,7 @@ defmodule Dlocal.Util do
     "https://sandbox.dlocal.com/api_curl/cashout_api"
   end
 
-  def payload_signature(payload) do
+  def payload_signature(%{} = payload) do
     {_, enc} = Jason.encode(payload)
 
     :crypto.hmac(:sha256, Application.get_env(:dlocal, :secret_key), enc)
