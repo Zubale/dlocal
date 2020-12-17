@@ -5,7 +5,7 @@ defmodule DlocalTest do
   doctest Dlocal
 
   setup_all do
-    HTTPoison.start
+    HTTPoison.start()
   end
 
   test "get exchange rate" do
