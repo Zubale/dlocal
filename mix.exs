@@ -28,7 +28,10 @@ defmodule Dlocal.MixProject do
       {:httpoison, "~> 1.7"},
 
       # various analyses tools
-      {:credo, "~> 1.5", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
+
+      # test third party
+      {:exvcr, "~> 0.12.2", only: :test}
     ]
   end
 

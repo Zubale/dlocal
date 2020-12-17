@@ -1,0 +1,32 @@
+[
+  {
+    "request": {
+      "body": "{\"currency\":\"COP\",\"login\":\"example\",\"pass\":\"examplepass\"}",
+      "headers": {
+        "Payload-Signature": "e669e2f195c7888167f1a5c1e806c36b38f3a20900b138e008ce9ea8292af846",
+        "Content-Type": "application/json"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://sandbox.dlocal.com/api_curl/cashout_api/get_exchange_rate"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"status\":0,\"exchange_rate\":3851.87}",
+      "headers": {
+        "Server": "Reblaze Secure Web Gateway",
+        "Date": "Thu, 17 Dec 2020 03:32:09 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "36",
+        "X-Powered-By": "PHP/7.0.16",
+        "Cache-Control": "no-cache",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Via": "1.1 google",
+        "Alt-Svc": "clear"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

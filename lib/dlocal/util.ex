@@ -22,4 +22,23 @@ defmodule Dlocal.Util do
     |> Base.encode16()
     |> String.downcase()
   end
+
+  def make_request(path, payload) do
+    {_, enc} = Jason.encode(payload)
+
+    headers = [
+      "Payload-Signature": payload_signature(payload),
+      "Content-Type": "application/json"
+    ]
+
+    "#{get_url()}/#{path}" |> HTTPoison.post(enc, headers) |> parse_response()
+  end
+
+  defp parse_response({:ok, %HTTPoison.Response{body: body, status_code: 200}}) do
+    body |> Jason.decode!()
+  end
+
+  defp parse_response({:ok, %HTTPoison.Response{body: body, status_code: status_code}}) do
+    %{status_code: status_code, body: body |> Jason.decode!()}
+  end
 end
