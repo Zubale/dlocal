@@ -13,4 +13,8 @@ defmodule Dlocal do
   def check_status(cashout_id) do
     Dlocal.CheckStatus.request(cashout_id)
   end
+
+  def cancel_cashout(cashout_id) do
+    Dlocal.CancelCashout.request(cashout_id)
+  end
 end

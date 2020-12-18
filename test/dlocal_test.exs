@@ -49,4 +49,13 @@ defmodule DlocalTest do
              }
     end
   end
+
+  test "cancel cashout" do
+    use_cassette "cancel_cashout" do
+      assert Dlocal.cancel_cashout(126_831) == %{
+               "description" => "OK",
+               "status" => 0
+             }
+    end
+  end
 end

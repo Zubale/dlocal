@@ -1,0 +1,32 @@
+[
+  {
+    "request": {
+      "body": "{\"cashout_id\":126831,\"login\":\"9ecd2967b2\",\"pass\":\"afaed34e49\"}",
+      "headers": {
+        "Payload-Signature": "f4884c402601ddcb4664dd31e2076279ae9a428cad9c09ad87f75bf9ba9408df",
+        "Content-Type": "application/json"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://sandbox.dlocal.com/api_curl/cashout_api/cancel_cashout"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"status\":0,\"description\":\"OK\"}",
+      "headers": {
+        "Server": "Reblaze Secure Web Gateway",
+        "Date": "Fri, 18 Dec 2020 17:54:58 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "31",
+        "X-Powered-By": "PHP/7.0.16",
+        "Cache-Control": "no-cache",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Via": "1.1 google",
+        "Alt-Svc": "clear"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
