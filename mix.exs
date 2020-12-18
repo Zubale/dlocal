@@ -43,7 +43,7 @@ defmodule Dlocal.MixProject do
 
   defp description do
     """
-    Dlocal API library for Elixir
+    an unofficial package Dlocal payouts API library for Elixir
     """
   end
 

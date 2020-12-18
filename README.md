@@ -1,11 +1,12 @@
-# Dlocal
+# Dlocal payouts
 
-**TODO: Add description**
+**an unofficial package Dlocal payouts API library for Elixir**
+
+The Dlocal Elixir library provides convenient access to the [Dlocal payouts API](https://docs.dlocal.com/api-documentation/payout-api-reference) from applications written in the Elixir language.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `dlocal` to your list of dependencies in `mix.exs`:
+the package can be installed by adding `dlocal` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
