@@ -1,18 +1,20 @@
 defmodule Dlocal do
   @moduledoc """
-  Documentation for `Dlocal`.
   """
 
-  @doc """
-  Hello world.
+  def exchange_rate(currency) do
+    Dlocal.GetExchangeRate.request(currency)
+  end
 
-  ## Examples
+  def request_payout(%{} = params) do
+    Dlocal.RequestPayout.request(params)
+  end
 
-      iex> Dlocal.hello()
-      :world
+  def check_status(cashout_id) do
+    Dlocal.CheckStatus.request(cashout_id)
+  end
 
-  """
-  def hello do
-    :world
+  def cancel_cashout(cashout_id) do
+    Dlocal.CancelCashout.request(cashout_id)
   end
 end
