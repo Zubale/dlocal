@@ -1,0 +1,32 @@
+[
+  {
+    "request": {
+      "body": "{\"account_type\":\"S\",\"address\":\"Street false\",\"amount\":\"100000\",\"bank_account\":\"96382852354\",\"bank_code\":\"007\",\"bank_name\":\"bancolombia\",\"beneficiary_lastname\":\"Doe\",\"beneficiary_name\":\"Jhon\",\"country\":\"CO\",\"currency\":\"COP\",\"document_id\":\"1004922993\",\"document_type\":\"CC\",\"external_id\":\"1608266975962\",\"login\":\"9ecd2967b2\",\"pass\":\"afaed34e49\"}",
+      "headers": {
+        "Payload-Signature": "1f5cb5a353bf48b955ec0e7179bc34ad0f5153e4a12104efea89d71286562820",
+        "Content-Type": "application/json"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://sandbox.dlocal.com/api_curl/cashout_api/request_cashout"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"status\":0,\"cashout_id\":126831,\"desc\":\"OK\"}",
+      "headers": {
+        "Server": "Reblaze Secure Web Gateway",
+        "Date": "Fri, 18 Dec 2020 04:49:38 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "44",
+        "X-Powered-By": "PHP/7.0.16",
+        "Cache-Control": "no-cache",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Via": "1.1 google",
+        "Alt-Svc": "clear"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
