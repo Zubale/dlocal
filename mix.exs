@@ -7,7 +7,12 @@ defmodule Dlocal.MixProject do
       version: "0.1.0",
       elixir: "~> 1.11-rc",
       test_coverage: [tool: ExCoveralls],
-      preferred_cli_env: [coveralls: :test, "coveralls.detail": :test, "coveralls.post": :test, "coveralls.html": :test],
+      preferred_cli_env: [
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test,
+        "coveralls.html": :test
+      ],
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: description(),
@@ -31,7 +36,6 @@ defmodule Dlocal.MixProject do
 
       # various analyses tools
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
-
       {:exvcr, "~> 0.12.2", only: :test},
       {:excoveralls, "~> 0.10", only: :test}
     ]
