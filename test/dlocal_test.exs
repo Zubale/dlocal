@@ -39,4 +39,14 @@ defmodule DlocalTest do
              }
     end
   end
+
+  test "check status" do
+    use_cassette "check_status" do
+      assert Dlocal.check_status(126_831) == %{
+               "cash_out_status" => 0,
+               "description" => "Received",
+               "status" => 0
+             }
+    end
+  end
 end
