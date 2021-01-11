@@ -16,15 +16,15 @@ defmodule Dlocal.Util do
   end
 
   def payload_signature(%{} = payload) do
-    {_, enc} = Jason.encode(payload)
+    {_, enc} = Jason.encode(Map.delete(payload, :secret_key))
 
-    :crypto.hmac(:sha256, Application.get_env(:dlocal, :secret_key), enc)
+    :crypto.hmac(:sha256, payload[:secret_key], enc)
     |> Base.encode16()
     |> String.downcase()
   end
 
   def make_request(path, payload) do
-    {_, enc} = Jason.encode(payload)
+    {_, enc} = Jason.encode(Map.delete(payload, :secret_key))
 
     headers = [
       "Payload-Signature": payload_signature(payload),

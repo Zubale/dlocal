@@ -1,7 +1,7 @@
 [
   {
     "request": {
-      "body": "{\"cashout_id\":126831,\"login\":\"9ecd2967b2\",\"pass\":\"afaed34e49\"}",
+      "body": "{\"cashout_id\":126831,\"login\":\"example\",\"pass\":\"examplepass\"}",
       "headers": {
         "Payload-Signature": "f4884c402601ddcb4664dd31e2076279ae9a428cad9c09ad87f75bf9ba9408df",
         "Content-Type": "application/json"
