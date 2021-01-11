@@ -3,13 +3,7 @@ defmodule Dlocal.CancelCashout do
 
   @path "cancel_cashout"
 
-  def request(cashout_id) do
-    payload = %{
-      login: Application.get_env(:dlocal, :login),
-      pass: Application.get_env(:dlocal, :pass),
-      cashout_id: cashout_id
-    }
-
+  def request(%{} = payload) do
     make_request(@path, payload)
   end
 end
