@@ -1,7 +1,7 @@
 [
   {
     "request": {
-      "body": "{\"account_type\":\"S\",\"address\":\"Street false\",\"amount\":\"100000\",\"bank_account\":\"96382852354\",\"bank_code\":\"007\",\"bank_name\":\"bancolombia\",\"beneficiary_lastname\":\"Doe\",\"beneficiary_name\":\"Jhon\",\"country\":\"CO\",\"currency\":\"COP\",\"document_id\":\"1004922993\",\"document_type\":\"CC\",\"external_id\":\"1608266975962\",\"login\":\"9ecd2967b2\",\"pass\":\"afaed34e49\"}",
+      "body": "{\"account_type\":\"S\",\"address\":\"Street false\",\"amount\":\"100000\",\"bank_account\":\"96382852354\",\"bank_code\":\"007\",\"bank_name\":\"bancolombia\",\"beneficiary_lastname\":\"Doe\",\"beneficiary_name\":\"Jhon\",\"country\":\"CO\",\"currency\":\"COP\",\"document_id\":\"1004922993\",\"document_type\":\"CC\",\"external_id\":\"1608266975962\",\"login\":\"example\",\"pass\":\"examplepass\"}",
       "headers": {
         "Payload-Signature": "1f5cb5a353bf48b955ec0e7179bc34ad0f5153e4a12104efea89d71286562820",
         "Content-Type": "application/json"
