@@ -11,23 +11,9 @@ the package can be installed by adding `dlocal` to your list of dependencies in 
 ```elixir
 def deps do
   [
-    {:dlocal, "~> 0.1.0"}
+    {:dlocal, "~> 0.1.2"}
   ]
 end
-```
-
-## Configuration
-
-
-Dlocal requires certain properties to be configured.
-
-In order to load ENV vars at runtime. Please note ENV vars have to be set prior app loading: export DLOCAL_LOGIN=123...
-
-```elixir
-config :dlocal,
-  login: System.get_env("DLOCAL_LOGIN"),
-  pass: System.get_env("DLOCAL_PASS"),
-  secret_key: System.get_env("DLOCAL_API_KEY"),
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
