@@ -4,7 +4,7 @@ defmodule Dlocal.Util do
   @doc false
   @spec get_url() :: String.t()
   def get_url() do
-    if Application.get_env(:dlocal, :sandbox) == false, do: live_url(), else: sandbox_url()
+    if Application.get_env(:dlocal, :sandbox) == "false", do: live_url(), else: sandbox_url()
   end
 
   defp live_url do
