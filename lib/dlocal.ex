@@ -3,7 +3,7 @@ defmodule Dlocal do
   """
 
   def exchange_rate(%{} = params) do
-    Dlocal.GetExchangeRate.request(currency)
+    Dlocal.GetExchangeRate.request(params)
   end
 
   def request_payout(%{} = params) do
@@ -11,10 +11,10 @@ defmodule Dlocal do
   end
 
   def check_status(%{} = params) do
-    Dlocal.CheckStatus.request(cashout_id)
+    Dlocal.CheckStatus.request(params)
   end
 
   def cancel_cashout(%{} = params) do
-    Dlocal.CancelCashout.request(cashout_id)
+    Dlocal.CancelCashout.request(params)
   end
 end
