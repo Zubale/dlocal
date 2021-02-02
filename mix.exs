@@ -36,6 +36,7 @@ defmodule Dlocal.MixProject do
 
       # various analyses tools
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
+      {:sobelow, "~> 0.8"},
       {:exvcr, "~> 0.12.2", only: :test},
       {:excoveralls, "~> 0.10", only: :test}
     ]
