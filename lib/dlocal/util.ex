@@ -4,7 +4,7 @@ defmodule Dlocal.Util do
 
   @doc false
   @spec get_url() :: String.t()
-  def get_url() do
+  def get_url do
     Application.get_env(:dlocal, :url)
   end
 

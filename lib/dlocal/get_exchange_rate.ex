@@ -1,4 +1,8 @@
+@moduledoc false
+
 defmodule Dlocal.GetExchangeRate do
+  @moduledoc false
+
   import Dlocal.Util
 
   @path "get_exchange_rate"
