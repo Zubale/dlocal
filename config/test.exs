@@ -1,8 +1,7 @@
 use Mix.Config
 
 config :dlocal,
-  url: "https://sandbox.dlocal.com/api_curl/cashout_api",
-  sandbox: true
+  url: "https://sandbox.dlocal.com/api_curl/cashout_api"
 
 config :exvcr,
   vcr_cassette_library_dir: "test/fixtures/vcr_cassettes",

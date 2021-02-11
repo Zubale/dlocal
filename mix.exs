@@ -4,7 +4,7 @@ defmodule Dlocal.MixProject do
   def project do
     [
       app: :dlocal,
-      version: "0.1.5",
+      version: "0.1.6",
       elixir: "~> 1.11-rc",
       test_coverage: [tool: ExCoveralls],
       preferred_cli_env: [
