@@ -1,4 +1,6 @@
 defmodule Dlocal.CheckStatus do
+  @moduledoc false
+
   import Dlocal.Util
 
   @path "check_status_cashout"

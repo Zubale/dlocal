@@ -1,4 +1,6 @@
 defmodule Dlocal.CancelCashout do
+  @moduledoc false
+
   import Dlocal.Util
 
   @path "cancel_cashout"

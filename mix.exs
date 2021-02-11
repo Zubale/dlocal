@@ -4,7 +4,7 @@ defmodule Dlocal.MixProject do
   def project do
     [
       app: :dlocal,
-      version: "0.1.5",
+      version: "0.1.6",
       elixir: "~> 1.11-rc",
       test_coverage: [tool: ExCoveralls],
       preferred_cli_env: [
@@ -36,6 +36,7 @@ defmodule Dlocal.MixProject do
 
       # various analyses tools
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
+      {:sobelow, "~> 0.8"},
       {:exvcr, "~> 0.12.2", only: :test},
       {:excoveralls, "~> 0.10", only: :test}
     ]

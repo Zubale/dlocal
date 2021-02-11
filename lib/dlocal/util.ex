@@ -4,17 +4,9 @@ defmodule Dlocal.Util do
 
   @doc false
   @spec get_url() :: String.t()
-  def get_url() do
+  def get_url do
     Application.get_env(:dlocal, :url)
   end
-
-  # defp live_url do
-  #   "https://api.dlocal.com/api_curl/cashout_api"
-  # end
-
-  # defp sandbox_url do
-  #   "https://sandbox.dlocal.com/api_curl/cashout_api"
-  # end
 
   def payload_signature(%{} = payload) do
     {_, enc} = Jason.encode(Map.delete(payload, :secret_key))

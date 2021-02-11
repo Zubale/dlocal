@@ -1,4 +1,6 @@
 defmodule Dlocal.RequestPayout do
+  @moduledoc false
+
   import Dlocal.Util
 
   @path "request_cashout"

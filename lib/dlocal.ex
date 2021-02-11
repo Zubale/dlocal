@@ -1,6 +1,5 @@
 defmodule Dlocal do
-  @moduledoc """
-  """
+  @moduledoc false
 
   def exchange_rate(%{} = params) do
     Dlocal.GetExchangeRate.request(params)
