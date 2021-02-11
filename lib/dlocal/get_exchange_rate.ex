@@ -1,5 +1,3 @@
-@moduledoc false
-
 defmodule Dlocal.GetExchangeRate do
   @moduledoc false
 

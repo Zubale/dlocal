@@ -1,5 +1,3 @@
-@moduledoc ""
-
 defmodule Dlocal.RequestPayout do
   @moduledoc false
 
